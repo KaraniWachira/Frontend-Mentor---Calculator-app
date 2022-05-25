@@ -1,0 +1,82 @@
+@import url(https: //fonts.google.com/specimen/League+Spartan);
+*, *::before, *::after{
+    box-sizing: border-box;
+    font-family: legue Spartan, sans-serif;
+    font-weight: 700;
+}
+body{
+    padding: 0;
+    margin: 0;
+    background-color: hsl(222, 26%, 31%);
+}
+
+.calculator-grid{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+    gap: 7px;
+}
+
+/*------button styling-------*/
+.calculator-grid > button{
+    cursor: pointer;
+    font-size: 32px;
+    border: 1px solid hsl(0, 0, 100%);
+    background-color: hsl(0, 5%, 81%);
+    border-radius: 9px;
+
+}
+.calculator-grid > button:hover{
+    background-color: hsl(0, 5%, 96%);
+}    
+
+.span-two{
+    grid-column: span 2;
+}
+
+.output{
+    grid-column: 1 / -1;
+    background-color: hsl(224, 36%, 15%);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.output .previous-operand{
+    color: whitesmoke;
+    font-size: 30px;
+}
+.output .current-operand {
+    color: white;
+    font-size: 49px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
